@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coba lagi Get Coffee Data</title>
+        <link rel="stylesheet" href="style_latihan3.css">
+    </head>
+
+    <body>
+        <p>Ini ceritany mau coba bikin ulang tugas yang get cofee setelah coba coba bljr sedikit</p>
+        <br>
+        <div class="input">
+        <h2>Get Data Coffee</h2>
+        <label for="url-nya"> Masukkan URL</label> <br>
+        <input type="text" id="url-nya"><br>
+        <button onclick="getdata()">Submit</button>
+        </div>
+
+        <p class="p1">output:</p>
+        <div id="hasil"></div>
+        
+
+        <script>
+            function getdata(){
+                // ambil value datanya
+                var urlnya = document.getElementById("url-nya").value;
+                var hasil = document.getElementById("hasil");
+                
+                // httprequest
+                var xhr = new XMLHttpRequest();
+                //mengambil data
+                xhr.open("GET", urlnya, true);
+                //cek server sudah berhasil diakses atau belum
+                xhr.onreadystatechange = function (){
+                    if (xhr.readyState == 4){
+                        if (xhr.status == 200){
+                            data = JSON.parse(xhr.responseText);
+
+                            //bikin tabel
+                            var tabel = "<table>";
+                            tabel += "<tr>";
+                            
+                            //Menggunakan keys
+                            var keys = Object.keys(data[0]);
+                            for (var i = 0; i < keys.length; i=i+1) {
+                                tabel += "<th>" + keys[i] + "</th>";
+                            }
+                            tabel += "</tr>";
+
+                            // Mengisi Data
+                            for (var j=0; j<data.length; j=j+1){
+                                tabel += "<tr>";
+                                for (var k=0; k<keys.length; k=k+1){
+                                    tabel += "<td>" + data[j][keys[k]]+"</td>";
+                                }
+                                tabel += "</td>";
+                                
+                            }
+
+                            tabel +="</table>";
+
+                            hasil.innerHTML = tabel;
+
+                            
+
+                            // hasil.innerText = "data berhasil diakses";
+                        }
+
+                        else{
+                            hasil.innerText = "data gagal diakses";
+                        }
+                        
+                    }
+                };
+                //mengirimkan datanya
+                xhr.send();
+            }
+        </script>
+    </body>
+
+    
+</html>
+
+

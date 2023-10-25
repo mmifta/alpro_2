@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coba lagi Get Coffee Data</title>
+</head>
+
+<body>
+    <p>Ini ceritanya mau coba bikin ulang tugas yang get cofee setelah coba coba bljr sedikit</p>
+    <br>
+    <h2>Get Data Coffee</h2>
+    <label for="url-nya"> Masukkan URL</label> <br>
+    <input type="text" id="url-nya"><br>
+    <button onclick="getdata()">Submit</button>
+
+    <script>
+        function getdata(){
+            var urlnya = document.getElementById("url-nya").value;
+            window.location.href = "display.html?url=" + encodeURIComponent(urlnya);
+        }
+    </script>
+</body>
+</html>

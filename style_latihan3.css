@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+h2{
+    color: azure;
+    text-align: center;
+}
+
+.input{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.p1{
+    text-align: center;
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+
+button{
+    background-color: aquamarine;
+}

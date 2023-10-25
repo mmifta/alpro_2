@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Coffee</title>
+</head>
+
+<body>
+    <h2>Output Data Coffee</h2>
+    <p>output:</p>
+    <div id="hasil"></div>
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var urlnya = urlParams.get('url');
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", urlnya, true);
+        xhr.onreadystatechange = function (){
+            if (xhr.readyState == 4){
+                if (xhr.status == 200){
+                    var data = JSON.parse(xhr.responseText);
+                    var tabel = "<table>";
+                    tabel += "<tr>";
+
+                    var keys = Object.keys(data[0]);
+                    for (var i = 0; i < keys.length; i=i+1) {
+                        tabel += "<th>" + keys[i] + "</th>";
+                    }
+                    tabel += "</tr>";
+
+                    for (var j=0; j<data.length; j=j+1){
+                        tabel += "<tr>";
+                        for (var k=0; k<keys.length; k=k+1){
+                            tabel += "<td>" + data[j][keys[k]]+"</td>";
+                        }
+                        tabel += "</tr>";
+                    }
+
+                    tabel +="</table>";
+
+                    document.getElementById("hasil").innerHTML = tabel;
+                } else {
+                    document.getElementById("hasil").innerText = "data gagal diakses";
+                }
+            }
+        };
+        xhr.send();
+    </script>
+</body>
+</html>

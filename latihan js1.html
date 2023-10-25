@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sesi 5 - latihan js
+        </title>
+    </head>
+    
+    <body>
+        <h1>Latihan JS dari video Dea Afrizal</h1>
+    </body>
+
+    <script>
+        // tugas 1
+        // buat promp untuk mengetahui saldo akhir dari apa yang diinputka oleh user
+        let gaji = Number(prompt('masukkan gaji anda bulan ini: '))
+        let tunjangan = Number(prompt('masukkan tunjuangan anda bulan: '))
+        let bonus = Number(prompt('masukkan bonus anda bulan ini: '))
+        const total = gaji + tunjangan + bonus
+
+        alert(`Total saldo akhir yang saya dapatkan adalah ${total}`)
+
+        // Tugas 2
+        // Menentukan hari hari dari tanggal yang ada saat ini di pc kita
+
+        let hari = new Date().getDay()
+        
+        switch(hari){
+            case 1:
+                hari = 'Senin'
+            break
+
+            case 2:
+                hari = 'Selasa'
+            break
+
+            case 3:
+                hari = 'Rabu'
+            break
+
+            case 4:
+                hari = 'Kamis'
+            break
+
+            case 5:
+                hari = 'Jumat'
+            break
+
+            case 6:
+                hari = 'Sabtu'
+            break
+
+            case 7:
+                hari = 'Minggu'
+            break
+        }
+        alert(`Hari ini adalah hari ${hari}`)
+    </script>
+</html>
