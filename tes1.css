@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav, main {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#home-content {
+    display: block;
+}
+
+#about-content, #contact-content {
+    display: none;
+}
