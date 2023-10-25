@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sesi 2</title>
+    </head>
+
+    <body>
+        <h1> 1.List </h1>
+
+        <h4>Ordered List</h4>
+        <!-- Ordered List: <ol> -->
+        <ol>
+            <li>Pasta 1 bungkus</li>
+            <li>Daging cincang 1 kg</li>
+            <li>Tomat 1/4 kg</li>
+            <li>Paprika 1/4 kg</li>
+            <li>Bawang merah 2 siung</li>
+            <li>Bawang putih 2 siung</li>
+            <li>Bumbu dapur</li>
+        </ol>
+
+        <h4>Unordered List</h4>
+        <!-- Unordered list: <ul> -->
+        <ul>
+            <li>Pasta 1 bungkus</li>
+            <li>Daging cincang 1 kg</li>
+            <li>Tomat 1/4 kg</li>
+            <li>Paprika 1/4 kg</li>
+            <li>Bawang merah 2 siung</li>
+            <li>Bawang putih 2 siung</li>
+            <li>Bumbu dapur</li>
+        </ul>
+
+        <h4>Definition List</h4>
+        <!-- Definition List: <dl> -->
+        <dl>
+            <dt>Siapkan Pasta</dt>
+            <dd>Rebuslah pasta hingga matang dan tiriskan. Sebentar saja.</dd>
+            <dt>Membuat Saus Pasta</dt>
+            <dd>Panaskan wajan lalu tumis bawang putih hingga harum dan kecoklatan. Tambahkan garam, kaldu ayam, dll secukupnya.</dd>
+            <dt>Sajikan</dt>
+            <dd>Campur dengan menggunakan spatula, sendok, garpu. Lalu santap</dd>
+
+        </dl>
+
+        <h4>Nested List</h4>
+        <!-- Nested List: list dlm list -->
+
+        <h5>OL dalam UL</h5>
+        <ul>
+            <li>Pasta 1 bungkus</li>
+            <li>Daging cincang 1 kg</li>
+            <li>Tomat 1/4 kg</li>
+            <li>Paprika 1/4 kg</li>
+            <li>Bawang merah 2 siung</li>
+            <li>Bawang putih 2 siung</li>
+            <li>Bumbu dapur</li>
+            <ol>
+                <li>Garam</li>
+                <li>Gula</li>
+                <li>Kaldu ayam</li>
+            </ol>
+        </ul>
+
+        <h5>OL dalam UL</h5>
+        <ol>
+            <li>Pasta 1 bungkus</li>
+            <li>Daging cincang 1 kg</li>
+            <li>Tomat 1/4 kg</li>
+            <li>Paprika 1/4 kg</li>
+            <li>Bawang merah 2 siung</li>
+            <li>Bawang putih 2 siung</li>
+            <li>Bumbu dapur</li>
+            <ul>
+                <li>Garam</li>
+                <li>Gula</li>
+                <li>Kaldu ayam</li>
+            </ul>
+        </ol>
+        
+        <hr>
+
+        <h1>2. Link dan Multipage</h1>
+        <h4>Link ke halaman website lain</h4>
+        <a href="http://www.google.com">Google</a>
+
+        <h4>Link ke halaman sendiri</h4>
+        <ul>
+            <li><a href="Perkenalan.html">Perkenalan</a></li>
+            <li><a href="Latihan.html">Latihan Sesi 1</a></li>
+        </ul>
+
+        <h4>E-mail</h4>
+        <a href="mailto:hikahanindi@gmail.com">E-mail ke hikahanindi</a>
+
+        <h4>ke part yg ada di sebuah halaman</h4>
+        <a href="pages/latihan.html#chapter-4">Latihan Sesi 1 chapter-4</a>
+        
+        <h4>Multipage</h4>
+        <ul>
+            <li><a href="pages/perkenalan.html">Perkenalan</a></li>
+            <li><a href="pages/latihan.html">Latihan Sesi 1</a></li>
+        </ul>
+        
+        <hr>
+
+        <h1>3. Atribut HTML</h1>
+        <!-- sesuatu keterangan yg ada di dlm tag dan dia memiliki value -->
+
+        <a href="http://www.google.com">google</a> 
+        <!-- atrributnya: haref -->
+
+        <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <!-- atributnya: align -->
+        
+        <p> <abbr title="Sekolah Dasar"></abbr> SD</p>
+        <!-- atributnya: title -->
+
+        <h5><i>Notes:</i></h5>
+        <p>atribut tu banyak bgt, nanti sambilan di eksplore aja, ada apa aja si atribu itu </p>
+
+        <hr>
+
+        <h1>4. Tabel</h1>
+        <h2>Membuat Tabel</h2>
+
+        <h4>Tabel standar</h4>
+        <table border="1">
+            <!-- tr: baris -->
+            <!-- td: data -->
+            <!-- th: header -->
+
+            <!-- border: atribut u bikin garis -->
+            <!-- colspan: atribut gabung colom  -->
+            <!-- rowspan: atribut gabung baris -->
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <h4>Tabel dengan header</h4>
+        <h5>Versi 1</h5>
+        <table border="1">
+            <tr>
+                <th>senin</th>
+                <td>10:00</td>
+                <td>12:00</td>
+                <td>14:00</td>
+            </tr>
+
+            <tr>
+                <th>selasa</th>
+                <td>10:00</td>
+                <td>12:00</td>
+                <td>15:15</td>
+            </tr>
+        </table>
+
+        <h5>Versi 2</h5>
+        <table border="1">
+            <th>senin</th>
+            <th>selasa</th>
+            <tr>
+                <td>10:00</td>
+                <td>10:00</td>
+            </tr>
+
+            <tr>
+                <td>11:00</td>
+                <td>11:00</td>
+            </tr>
+
+            <tr>
+                <td>12:30</td>
+                <td>12:30</td>
+            </tr>
+        </table>
+
+        <h5>Versi 3</h5>
+        <table border="1">
+            <th>Jam/Hari</th>
+            <th>senin</th>
+            <th>selasa</th>
+
+            <tr>
+                <th>10:00</th>
+                <td>Masuk Sekolah</td>
+                <td>Les musik</th>
+            </tr>
+
+            <tr>
+                <th>12:00</th>
+                <td>Ishoma</td>
+                <td>Ishoma</td>
+            </tr>
+
+            <tr>
+                <th>15:00</th>
+                <td>Pulang sekolah</td>
+                <td>Les Bahasa</td>
+            </tr>
+        </table>
+
+        <h5>Versi 4</h5>
+        <table border="1">
+            <th>Jam/Hari</th>
+            <th>senin</th>
+            <th>selasa</th>
+
+            <tr>
+                <th>10:00</th>
+                <td>Masuk Sekolah</td>
+                <td>Les musik</th>
+            </tr>
+
+            <tr>
+                <th>12:00</th>
+                <td colspan="2">Ishoma</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">15:00</th>
+                <td>Pulang sekolah</td>
+                <td>Les Bahasa</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Minum Obat
+
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h1>5. Form</h1>
+        <form>
+            <h4>Text form</h4>
+            Nama depan: <input type="text"> <br>
+            Nama belakang: <input type="text"> <br>
+            Password: <input type="password"> <br> <!-- klo pass, tipe datanya harus password -->
+            
+
+            <h4>Radio Button</h4>
+            <p>Apakah merupakan WNI?</p>
+            <input type="radio" name="WNI" id="ya" value="ya"><label for="ya">ya</label>
+            <input type="radio" name="WNI" id="tidak" value="tidak"><label for="tidak">tidak</label>
+            
+            <h4>Checkbox</h4>
+            <p>Apa gendre musik favorit?</p>
+            <input type="checkbox" name="musik" id="Dangdut" value="Dangdut"><label for="Dangdut">Dangdut</label>
+            <input type="checkbox" name="musik" id="Jazz" value="Jazz"><label for="Jazz">Jazz</label>
+            
+            <h4>Dropdown List</h4>
+            <p>Apa pekerjaan Anda?</p>
+            <select name="Pekerjaan">
+                <option value="Mahasiswa">Mahasiswa</option>
+                <option value="Dosen">Dosen</option>
+                <option value="Tendik">Tendik</option>
+            </select>
+
+            <h4>Upload File</h4>
+            <p>Silahkan upload file</p>
+            <input type="file" name="foto" value="upload_foto">
+            <br>
+            <input type="button" name="submit" value="submit">
+
+        </form>
+        
+
+
+        
+        
+    </body>
+
+
+
+</html>

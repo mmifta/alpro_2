@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sesi 3</title>
+    </head>
+
+    <body>
+        <h1>1.Gambar</h1>
+        <!-- <img> -->
+
+        <h2>A. Menampilkan Gambar</h2>
+        <img src="img/gambar 1.png" height="100 px" alt="Persyaratan Beasiswa" title="Persyaratan Beasiswa Pertamina">
+        <!-- <img>: tag untuk gambar -->
+        <!-- klo mau ttp proposional, pilih aja salah atu height/widht -->
+        <!-- alt: keterangan saat gambarnya ga tersedia -->
+
+        <h2>B. Gambar Di dalam text</h2>
+        <h4>- Tanpa alignment</h4>
+        <p><img src="img/gambar 1.png" height="100 px" alt="Persyaratan Beasiswa" title="Persyaratan Beasiswa Pertamina">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aut aliquam porro ratione magni sed incidunt nam officiis! Consequatur atque eius qui dolor reprehenderit officia quaerat iure expedita odit eum!</p>
+
+        <h4>- Dengan alignment kiri</h4>
+        <p><img src="img/gambar 1.png" height="100 px" alt="Persyaratan Beasiswa" title="Persyaratan Beasiswa Pertamina" align="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quia quis nostrum modi nisi voluptas facere quasi pariatur? Ipsam eveniet iure ducimus iusto debitis maxime ex iste beatae itaque nostrum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum debitis ipsam obcaecati. Obcaecati exercitationem aut praesentium omnis quas harum, commodi dolorum illum sapiente saepe rerum iste voluptas earum distinctio quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corrupti alias quae culpa dolore, harum ducimus laboriosam neque atque possimus asperiores ratione consequatur eveniet ipsam illum similique minima aut cum.</p>
+        
+        <h4>- Dengan alignment kanan</h4>
+        <p><img src="img/gambar 1.png" height="100 px" alt="Persyaratan Beasiswa" title="Persyaratan Beasiswa Pertamina" align="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quia quis nostrum modi nisi voluptas facere quasi pariatur? Ipsam eveniet iure ducimus iusto debitis maxime ex iste beatae itaque nostrum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum debitis ipsam obcaecati. Obcaecati exercitationem aut praesentium omnis quas harum, commodi dolorum illum sapiente saepe rerum iste voluptas earum distinctio quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corrupti alias quae culpa dolore, harum ducimus laboriosam neque atque possimus asperiores ratione consequatur eveniet ipsam illum similique minima aut cum.</p>
+        <!-- klo paragrafnya mau di align, tinggl tambahin align aja di tag <p> nya -->
+    
+        <h2>3. Gambar widht auto, lebar otomatis</h2>
+        <p>Ini tu nanti gambarnya bisa nyesuaian sama tampilan layar kita. Misalkan buka di hp, dia akan nyesuaian layar hp kita juga.</p>
+        <img src="img/gambar 2.png" width="100%" title="Klo ga salah ini waktu basdat">
+        <img src="img/gambar 3.png" width="100%" title="ini waktu mau bikin akun MBKM error teruuus">
+
+        <hr>
+
+        <h1>2. Video</h1>
+        <!-- <video> -->
+
+        <h4>Video aja</h4>
+        <video src="vid/pemro.mp4" 
+                width="100%" 
+                poster="img/cover.png" 
+                controls
+                preload="metadata" >
+            <p>Video kuliah online Pengantar Pemrograman</p>
+        </video>
+
+        <h4>video + text</h4>
+        <p><video src="vid/pemro.mp4" 
+            width="100%" 
+            poster="img/cover.png" 
+            controls
+            preload="metadata" >
+        </video>Video kuliah online Pengantar Pemrograman</p>
+
+
+        <hr>
+
+        <h1>3. Suara </h1>
+        <!-- <audio> -->
+
+        <p>Contoh untuk file suara</p>
+        <audio src="sound/test sound.mp3"
+                controls
+                loop>
+
+        </audio>
+
+
+
+
+    </body>
+</html>
